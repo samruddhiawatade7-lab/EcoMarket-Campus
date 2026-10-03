@@ -1,6 +1,6 @@
 # EcoMarket - Full-Stack E-Commerce Sustainability Marketplace
 
-EcoMarket is a complete, production-grade full-stack e-commerce marketplace dedicated to sustainable, pre-owned, refurbished, recycled, and upcycled products. It features dynamic sustainability scoring, detailed environmental impact metrics (CO₂ avoided, water saved, waste reduced), role-based access (Buyer, Seller, Admin), atomic checkout processing, and real-time interactive UI dashboards.
+EcoMarket is a complete, production-grade full-stack e-commerce marketplace dedicated to  pre-owned products, where students can buy, sell, and exchange pre-owned products like lab equipments , books, furniture , helping reduce waste and maintain affordability for college students 
 
 ---
 
@@ -26,18 +26,7 @@ EcoMarket is a complete, production-grade full-stack e-commerce marketplace dedi
 
 ## 💡 Key Features & Architecture
 
-### **1. Sustainability Engine**
-- **Deterministic Sustainability Score (0 - 100)**: Evaluates items based on:
-  - **Condition** (Refurbished: +25, Pre-owned: +30, Upcycled: +35, Recycled: +35, New: +10)
-  - **Eco-Certifications** (Energy Star, Fair Trade, GOTS, etc.: up to +25)
-  - **Recycled Content & Materials** (up to +20)
-  - **Repairability & Recyclability** (up to +20)
-- **Environmental Impact Metrics**: Calculates real-time savings per purchase and across the entire platform:
-  - **CO₂ Avoided** (kg)
-  - **Water Saved** (Liters)
-  - **Waste Reduced** (kg)
-
-### **2. Multi-Role Permissions**
+### ** Multi-Role Permissions**
 - **BUYER**: Browse products with filters, dynamic search, add to cart/wishlist, atomic multi-item checkout, view order history & sustainability impact metrics, write verified purchase reviews.
 - **SELLER**: Submit products with eco-attributes (status set to `PENDING` awaiting Admin approval), manage inventory, view personal order items & sales analytics.
 - **ADMIN**: Approve/reject pending seller products, manage categories, view platform-wide analytics, manage user accounts (deactivate/activate).
