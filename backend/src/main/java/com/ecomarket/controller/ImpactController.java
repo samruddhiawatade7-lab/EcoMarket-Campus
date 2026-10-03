@@ -1,0 +1,27 @@
+package com.ecomarket.controller;
+
+import com.ecomarket.dto.SustainabilityImpactDTO;
+import com.ecomarket.service.ImpactService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/impact")
+public class ImpactController {
+
+    @Autowired
+    private ImpactService impactService;
+
+    @GetMapping("/global")
+    public ResponseEntity<SustainabilityImpactDTO> getGlobalImpact() {
+        return ResponseEntity.ok(impactService.getGlobalImpact());
+    }
+
+    @GetMapping("/user")
+    public ResponseEntity<SustainabilityImpactDTO> getUserImpact() {
+        return ResponseEntity.ok(impactService.getUserImpact());
+    }
+}

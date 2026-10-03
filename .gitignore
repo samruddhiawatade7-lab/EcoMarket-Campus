@@ -1,0 +1,27 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.idea/
+.vscode/
+*.iml
+
+# Maven / Java Build
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# Node / Vite Frontend Build
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# Uploaded Files & Temporary Assets
+backend/uploads/
+*.log
+
+# Environment variables
+.env
